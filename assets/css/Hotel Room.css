@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.hotel-page .container {
+    padding: 140px 0 0 0;
+}
+.hotel-page .container .head-line .title{
+    font-size: 40px;
+    line-height: 57px;
+    width: 500;
+    color: #252525;
+    font-family: playfair display, serif;
+}
+.hotel-page .container .head-line .text{
+    font-family: Outfit;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #6B7280E5;
+}
+
+.hotel-page .container .content {
+    display: flex;
+    justify-content: space-between;
+
+}
+.hotel-page .container .content .hotels{
+    display: flex;
+    flex-direction: column;
+}
+.hotel-page .container .content .hotels .hotel{
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    
+    position: relative;
+    
+}
+.hotel-page .container .content .hotels .hotel:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #E5E7EB;
+}
+
+/* .hotel-page .container .content .hotels .hotel .line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #6B72804D;
+} */
+
+.hotel-page .container .content .hotels .hotel .hotel-photo {
+     width: 260px;
+    height: 200px;
+    border-radius: 14px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.hotel-page .container .content .hotels .hotel .text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.hotel-page .container .content .hotels .hotel .text .head-address{
+     color: #6B7280;
+    font-size: 13px;
+    margin: 0;
+}
+.hotel-page .container .content .hotels .hotel .text .name {
+    font-family: Playfair Display, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+     margin: 0;
+}
+.hotel-page .container .content .hotels .hotel .text .stars{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.hotel-page .container .content .hotels .hotel .text .stars img{
+    width: 16px;
+}
+.hotel-page .container .content .hotels .hotel .text .stars p{
+    margin: 0 0 0 6px;
+    font-size: 12px;
+    color: #6B7280;
+}
+.hotel-page .container .content .hotels .hotel .text .address{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6B7280;
+    font-size: 13px;
+}
+.hotel-page .container .content .hotels .hotel .text .address p,
+.hotel-page .container .content .hotels .hotel .text .icons p
+{
+    margin: 0;
+}
+.hotel-page .container .content .hotels .hotel .text .icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.hotel-page .container .content .hotels .hotel .text .icon-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #F3F4F6;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.hotel-page .container .content .hotels .hotel .text .price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-top: auto;
+}
+.show-more{
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.show-more button{
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: #2563EB;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.filter{
+  width: 280px;
+}
+
+.filter-form{
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  /* position: sticky; */
+  /* top: 110px; */
+}
+
+/* Header */
+.filter-head{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filter-head p{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.filter-head button{
+  background: none;
+  border: none;
+  color: #00000066;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Sections */
+.filter-section{
+  border-top: 1px solid #E5E7EB;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.filter-title{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Checkbox Items */
+.check-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+.check-item input{
+  accent-color: #2563EB;
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 992px){
+  .filter{
+    width: 100%;
+  }
+
+  .filter-form{
+    position: static;
+  }
+}
+
+
+/* ============================= */
+/*        Responsive Design     */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .hotel-page .container .content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .filter {
+    width: 100%;
+    order: -1; /* يطلع فوق */
+  }
+
+  .hotels {
+    width: 100%;
+  }
+
+  .hotel-page .container {
+    padding: 100px 16px 0 16px;
+  }
+
+}
+
+
+/* موبايل */
+@media (max-width: 576px) {
+
+  .hotel-page .container .content .hotels .hotel {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hotel-page .container .content .hotels .hotel .hotel-photo {
+    width: 100%;
+    height: 180px;
+  }
+
+  .hotel-page .container .content .hotels .hotel .text .name {
+    font-size: 18px;
+  }
+
+  .hotel-page .container .content .hotels .hotel .text .price {
+    font-size: 18px;
+  }
+
+  .filter-form {
+    padding: 16px;
+  }
+
+}
+/* ===== Mobile Filter Button ===== */
+.mobile-filter-btn{
+  display: none;
+}
+
+@media (max-width: 576px){
+  .mobile-filter-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111827;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    z-index: 1001;
+    box-shadow: 0 6px 18px rgba(0,0,0,.2);
+  }
+
+  .filter{
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    z-index: 1002;
+    transition: .35s ease;
+    overflow-y: auto;
+    padding: 16px;
+  }
+
+  .filter.active{
+    bottom: 0;
+  }
+
+  .filter-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+  }
+
+  .filter-overlay.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

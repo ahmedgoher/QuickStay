@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickStay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mainpage.css">
+</head>
+<body>
+    <!-- Start Home -->
+    <div class="Home">
+        <div class="container">
+            <div class="navbar-custom d-flex justify-content-between align-items-center">
+                
+            <img src="assets/imgs/logo.svg" alt="logo" class="logo">
+            <div class="nav-links ">
+                <a href="#home">Home</a>
+                <a href="#Hotels">Hotels</a>
+                <a href="#Experiences">Experiences</a>
+                <a href="#About">About</a>
+            </div>
+            
+
+            <div class="search-and-login">
+               <a href="#" class="searchIcon"> <img src="assets/imgs/searchIcon.svg" alt="search"></a>
+               <!-- <a href="" class="userIcon"> <img src="assets/imgs/userIcon.svg" alt="userIcon"></a> -->
+               <a href="#" class="login-link"><Span>Login</Span></a>
+            </div>
+<div class="menu-toggle">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+            </div>
+            </div>
+            
+            <div class="mobile-menu">
+
+    <div class="mobile-links">
+        <a href="#home">Home</a>
+        <a href="#Hotels">Hotels</a>
+        <a href="#Experiences">Experiences</a>
+        <a href="#About">About</a>
+    </div>
+
+    <div class="mobile-auth d-flex flex-column gap-2">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Create Account</a>
+    </div>
+
+</div>
+
+            <div class="main-part">
+                <p class="p-background">The Ultimate Hotel Experience</p>
+                <h1>Discover Your Perfect
+                    Getaway Destination</h1>
+                <p class="text">Unparalleled luxury and comfort await at the world's most exclusive
+                   hotels and resorts. Start your journey today.</p>
+                <form action="post" class="search-hotels">
+                    <div>
+                        <img src="assets/imgs/calenderIcon.svg" alt=""><label for="destinations">Destination</label>
+                        <input list="destinations" class="destinations" type="text" placeholder="Type here">
+                        <datalist id="destinations">
+                            <option value="New York">
+                            <option value="Paris">
+                            <option value="Tokyo">
+                            <option value="London">
+                            <option value="Sydney">
+                        </datalist>
+                    </div>
+                    <div>
+                        <img src="assets/imgs/calenderIcon.svg" alt=""><label for="checkin">Check-in</label>
+                        <input type="date" id="checkin">
+                    </div>
+                    <div>
+                        <img src="assets/imgs/calenderIcon.svg" alt=""><label for="checkout">Check-out</label>
+                        <input type="date" id="checkout">
+                    </div>
+                    <div>
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guests" min="1" max="4" value="1">
+                    </div>
+                    
+                        <button type="submit" class="search-button">
+                            <img src="assets/imgs/searchIcon.svg" alt="search">
+                            <span>Search</span>
+                         </button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Home -->
+     <!-- Start Destination -->
+      <div class="Destination">
+        <div class="container">
+            <div class="title">
+            <h1 class="section-title">Featured Hotels</h1>
+            <p>Discover our handpicked selection of exceptional properties around the world, offering unparalleled luxury and unforgettable experiences</p>
+            </div>
+            <div class="destination-cards">
+                <div class="cards">
+                    <div class="notify">
+                        <P>Best Seller</P>
+                    </div>
+                    <img src="assets/imgs/roomImg1.png" alt="destination1">
+                    <div class="card-info">
+                        <div class="details-text d-flex justify-content-between align-items-center">
+                            <p>The Grand Resort</p>
+                            <div class="stars" >
+                                <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                                <p>4.8</p>
+                            </div>
+                            
+                        </div>
+                        <div class="details-adress d-flex align-items-center ">
+                            <img src="assets/imgs/locationIcon.svg" alt="locationIcon">
+                            <p>Maldives</p>
+                        </div>
+                        <div class="details-btn d-flex justify-content-between align-items-center">
+                            <p><span>$450</span>/night</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="assets/imgs/roomImg2.png" alt="destination2">
+                    <div class="card-info">
+                        <div class="details-text d-flex justify-content-between align-items-center">
+                            <p>Urban Oasis Hotel</p>
+                            <div class="stars">
+                                <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                                <p>4.6</p>
+                            </div>
+                            
+                        </div>
+                        <div class="details-adress d-flex align-items-center">
+                            <img src="assets/imgs/locationIcon.svg" alt="locationIcon">
+                            <p>New York, USA</p>
+                        </div>
+                        <div class="details-btn d-flex justify-content-between align-items-center">
+                            <p><span>$320</span>/night</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="notify">
+                        <P>Best Seller</P>
+                    </div>
+                    <img src="assets/imgs/roomImg3.png" alt="destination3">
+                    <div class="card-info">
+                        <div class="details-text d-flex justify-content-between align-items-center">
+                            <p>Seaside Serenity Resort</p>
+                            <div class="stars">
+                                <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                                <p>4.9</p>
+                            </div>
+                            
+                        </div>
+                        <div class="details-adress d-flex align-items-center">
+                            <img src="assets/imgs/locationIcon.svg" alt="locationIcon">
+                            <p>Bali, Indonesia</p>
+                        </div>
+                        <div class="details-btn d-flex justify-content-between align-items-center">
+                            <p><span>$400</span>/night</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="notify">
+                        <P>New</P>
+                    </div>
+                    <img src="assets/imgs/roomImg4.png" alt="destination4">
+                    <div class="card-info">
+                        <div class="details-text d-flex justify-content-between align-items-center">
+                            <p>Seaside Serenity Resort</p>
+                            <div class="stars">
+                                <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                                <p>4.9</p>
+                            </div>
+                            
+                        </div>
+                        <div class="details-adress d-flex align-items-center">
+                            <img src="assets/imgs/locationIcon.svg" alt="locationIcon">
+                            <p>Bali, Indonesia</p>
+                        </div>
+                        <div class="details-btn d-flex justify-content-between align-items-center">
+                            <p><span>$400</span>/night</p>
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-btn">
+                <button>View All Hotels</button>
+            </div>
+        </div>
+      </div>
+     <!-- End Destination -->
+
+    <!-- Start Exclusive Offers -->
+     <div class="Offer">
+        <div class="container d-flex flex-column gap-5 ">
+            <div class="content">
+                <div class="head">
+                    <div class="text">
+                     <h1>Exclusive Offers</h1>
+                    </div>
+                    <div class="offer-btn">
+                        <a>View All Offers</a>
+                        <img src="assets/imgs/arrowIcon.svg" alt="">
+                    </div>
+                </div>
+                <div class="text-p">
+                    <p>Take advantage of our limited-time offers and special packages to enhance your stay and create unforgettable memories.</p>
+                </div>
+            </div>
+           <div class="offer-cards">
+    <div class="offer-card card-1">
+        <p class="badge">25% OFF</p>
+
+        <div class="card-content">
+            <p class="title">Summer Escape Package</p>
+            <p class="desc">Enjoy a complimentary night and daily breakfast</p>
+            <p class="expire">Expires Aug 31</p>
+
+            <button class="view-btn">
+                View Offers
+                <img src="assets/imgs/arrowIcon.svg" alt="arrow">
+            </button>
+        </div>
+    </div>
+
+    <div class="offer-card card-2">
+        <p class="badge">20% OFF</p>
+
+        <div class="card-content">
+            <p class="title">Romantic Getaway</p>
+            <p class="desc">Special couples package including spa treatment</p>
+            <p class="expire">Expires Sep 20</p>
+
+            <button class="view-btn">
+                View Offers
+                <img src="assets/imgs/arrowIcon.svg" alt="arrow">
+            </button>
+        </div>
+    </div>
+
+    <div class="offer-card card-3">
+        <p class="badge">30% OFF</p>
+
+        <div class="card-content">
+            <p class="title">Luxury Retreat</p>
+            <p class="desc">
+                Book 60 days in advance and save on your stay at any of our luxury properties worldwide.
+            </p>
+            <p class="expire">Expires Sep 25</p>
+
+            <button class="view-btn">
+                View Offers
+                <img src="assets/imgs/arrowIcon.svg" alt="arrow">
+            </button>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    <!-- End Exclusive Offers -->
+     <!-- Start Testimonials -->
+      <div class="Testimonials">
+        <div class="container">
+            <div class="content">
+            <div class="section-title">
+                <h1>What Our Guests Say</h1>
+                <p>Discover why discerning travelers choose QuickStay for their luxury accommodations around the world.</p>
+            </div>
+            <div class="cards-part">
+                <div class="cards">
+                    <div class="idintfy">
+                        <img src="assets/imgs/user1photo.jpg" alt="user1">
+                        <div class="text">
+                            <p class="user-name">Emily R.</p>
+                            <p class="user-location">London, UK</p>
+                         </div>
+                    </div>
+
+                    <div class="stars">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                    </div>
+                    <p class="review-text">"An unforgettable experience! The staff were incredibly attentive, and the amenities were top-notch. Highly recommend QuickStay for anyone seeking luxury and comfort."</p>
+                </div>
+                <div class="cards">
+                    <div class="idintfy">
+                        <img src="assets/imgs/user1photo.jpg" alt="user1">
+                        <div class="text">
+                            <p class="user-name">Emily R.</p>
+                            <p class="user-location">London, UK</p>
+                         </div>
+                    </div>
+                    <div class="stars">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                    </div>
+                    <p class="review-text">"An unforgettable experience! The staff were incredibly attentive, and the amenities were top-notch. Highly recommend QuickStay for anyone seeking luxury and comfort."</p>
+                </div>
+                <div class="cards">
+                    <div class="idintfy">
+                        <img src="assets/imgs/user1photo.jpg" alt="user1">
+                        <div class="text">
+                            <p class="user-name">Emily R.</p>
+                            <p class="user-location">London, UK</p>
+                         </div>
+                    </div>
+                    <div class="stars">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                        <img src="assets/imgs/starIconFilled.svg" alt="starIconFilled">
+                    </div>
+                    <p class="review-text">"An unforgettable experience! The staff were incredibly attentive, and the amenities were top-notch. Highly recommend QuickStay for anyone seeking luxury and comfort."</p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+     <!-- End Testimonials -->
+      <!-- Start Inspired -->
+       <div class="Inspired">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1>Stay Inspired</h1>
+                    <p>Join our newsletter and be the first to discover new destinations, exclusive offers, and travel inspiration.</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit">Subscribe <img src="assets/imgs/arrowIcon.svg" alt="arrowIcon"></button>
+                </form>
+                <p class="tip">By subscribing, you agree to our Privacy Policy and consent to receive updates.</p>
+            </div>
+        </div>
+       </div>
+       <!-- End Inspired -->
+        <!-- Start Footer -->
+        <div class="Footer">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <img src="assets/imgs/logo.svg" alt="Logo">
+                    <p>Discover the world's most extraordinary places to stay, from boutique hotels to luxury villas and private islands.</p>
+                    <div class="icons">
+                        <a href="#"><img src="assets/imgs/facebookIcon.svg" alt="facebookIcon"></a>
+                <a href="#"><img src="assets/imgs/twitterIcon.svg" alt="twitterIcon"></a>
+                <a href="#"><img src="assets/imgs/instagramIcon.svg" alt="instagramIcon"></a>
+                <a href="#"><img src="assets/imgs/linkendinIcon.svg" alt="linkedinIcon"></a>
+                    </div>
+                </div>
+                <div class="COMPANY">
+                    <h3>COMPANY</h3>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Partners</a>
+                </div>
+                <div class="SUPPORT">
+                    <h3>SUPPORT</h3>
+                    <a href="#">Help Center</a>
+                    <a href="#">Safety Information</a>
+                    <a href="#">Cancellation Options</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <div class="last-text">
+                    <h3>STAY UPDATED</h3>
+                    <p>Subscribe to our newsletter for travel inspiration and special offers.</p>
+                    <form action="">
+                        <input type="text" placeholder="your email">
+                        <button type="submit"><img src="assets/imgs/arrowIcon.svg" alt="arrowIcon"></button>
+                    </form>
+                </div>
+            <!-- <img src="assets/imgs/logoWhite.svg" alt="logoWhite" class="logoWhite"> -->
+           
+            
+        </div>
+        <hr class="line">
+        <div class="end-footer">
+         <p class="copy-right">&copy; 2026 QuickStay. All rights reserved.</p>
+            <div class="terms ">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+        </div>
+            </div>
+            </div>
+            </div>
+         <!-- End Footer -->
+     <script src="assets/js/assets.js"></script>
+     <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <!-- <script src="assets/js/mainpage.js"></script> -->
+      <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+ 
+</script>
+
+</body>
+</html>
