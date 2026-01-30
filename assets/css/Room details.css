@@ -835,3 +835,133 @@ font-size: 16px;
 }
 
 /* End Footer */
+@media (max-width: 768px){
+    .details-body {
+        padding: 100px 16px;
+    }
+
+    .details-body form {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .details-body form .inputs{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .details-body form .line{
+        display: none; /* اخفي الخطوط العمودية */
+    }
+
+    .details-body form .sub-btn button{
+        width: 100%;
+        padding: 16px 0;
+    }
+}
+@media (max-width: 768px){
+    .details-body .imgs{
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .details-body .main-img,
+    .details-body .sub-imgs{
+        height: auto;
+    }
+}
+@media (max-width: 768px){
+    .details-body .room-info .item{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .details-body .comment .head{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .details-body .comment button{
+        width: 100%;
+    }
+}
+/* Responsive for Room Name + Price + Icons */
+@media (max-width: 768px) {
+    .details-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .details-head .title-icon {
+        width: 100%;
+    }
+
+    .details-head .title-icon .icons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .details-head .room-price p {
+        font-size: 24px; /* أصغر شويه للموبايل */
+    }
+
+    /* Room info items responsive */
+    .details-body .room-info .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .details-body .room-info .item .text {
+        width: 100%;
+    }
+
+    .details-body .room-info .item .text p {
+        font-size: 14px;
+    }
+}
+/* Responsive Form */
+@media (max-width: 768px){
+    .details-body form {
+        flex-direction: column; /* خلي الفورم عمودي */
+        gap: 16px;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .details-body form .inputs{
+        flex-direction: column; /* الحقول تبقى فوق بعض */
+        gap: 12px;
+        width: 100%;
+    }
+
+    .details-body form .inputs div{
+        width: 100%;
+    }
+
+    .details-body form .inputs div input{
+        width: 100%;
+        min-width: auto;
+    }
+
+    .details-body form .line{
+        display: none; /* اخفي الخط العمودي */
+    }
+
+    .details-body form .sub-btn button{
+        width: 100%;
+        padding: 16px 0;
+    }
+}
+@media (max-width: 768px){
+    .details-body form .line {
+        /* display: none; أبسط حل */
+        /* أو لو حابب يظهر خط رفيع تحت كل حقل بدل العمود */
+        /**/ width: 100%;
+           height: 1px;
+           background-color: #D1D5DB;
+           margin: 8px 0; 
+    }
+}
